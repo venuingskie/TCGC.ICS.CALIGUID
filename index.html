@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="browsertab-removebg-preview.png">
+    <link rel="icon" type="image/jpg" href="browsertab-removebg-preview.png">
+    <link rel="stylesheet" href="stylelog.css">
+    <title>CALIGUID Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Log In</h1>
+        <form action="">
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Enter your username" id="username">
+            </div>
+
+            <div class="input">
+                <i class="fa-sharp fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter your password" id="password">
+            </div>
+
+            <button onclick="func()">Log In</button><br>
+            
+        </form>
+    </div>
+
+    <script>
+        function func()
+        {
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById('password').value;
+        if(email == 'venus' && pass == '123456'){
+            alert("succcess full! ")
+            window.location.assign("unknown.html")
+        }
+        else{
+            alert("Wrong entry invalid")
+        }
+        }
+    </script>
+    
+</body>
+</html>
